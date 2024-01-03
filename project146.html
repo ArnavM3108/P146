@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Animating Shapes</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <!-- Creating scene -->
+
+      <!--  --------- SKY  --------- -->
+
+      <a-sky color="#EBEBEB"></a-sky>
+
+      <!--  --------- GROUND  --------- -->
+
+      <a-plane
+        id="ground"
+        color="black"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="20"
+        height="10"
+      ></a-plane>
+
+      <a-box color="blue" position="0 8 0" height="7" width="5" depth="3">
+      </a-box>
+
+      <a-cylinder
+        color="red"
+        position="-1 2 0"
+        rotation="0 0 0"
+        height="5"
+        radius="0.75"
+      >
+      </a-cylinder>
+      <a-cylinder
+        color="red"
+        position="1 2 0"
+        rotation="0 0 0"
+        height="5"
+        radius="0.75"
+      >
+      </a-cylinder>
+      <a-cylinder
+        color="red"
+        position="-4 9 0"
+        rotation="90 90 0"
+        height="3"
+        radius="0.75"
+      >
+      </a-cylinder>
+      <a-cylinder
+      color="red"
+      position="4 9 0"
+      rotation="90 90 0"
+      height="3"
+      radius="0.75"
+      >
+      </a-cylinder>
+      <a-box color="red" position="0 13 0" height="3" width="3" depth="3">
+      </a-box>      
+      <a-sphere
+      color ="green"
+      position="0.7 13.25 1.25" 
+      radius="0.5"></a-sphere>
+      <a-sphere
+      color ="green"
+      position="-0.7 13.25 1.25" 
+      radius="0.5"></a-sphere>      
+      <!--  --------- CAMERA --------- -->
+
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15">
+      </a-camera>
+    </a-scene>
+    <!-- Closing scene -->
+  </body>
+</html>
